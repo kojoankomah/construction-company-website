@@ -1,0 +1,13 @@
+# Environment files
+.env
+.env.*
+
+# Dependencies and Cloudflare files
+node_modules/
+.wrangler/
+.dev.vars
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
