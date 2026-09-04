@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Construction Projects | ApexStone Construction</title>
+
+    <meta
+    name="description"
+    content="Explore fictional residential, commercial, renovation and civil construction projects completed by ApexStone Construction."
+    >
+
+    <meta property="og:title" content="ApexStone Construction Projects">
+
+    <meta
+    property="og:description"
+    content="Explore selected residential, commercial, renovation and civil works projects."
+    >
+
+    <meta
+    property="og:image"
+    content="assets/images/projects/commercial-complex.webp"
+    >
+
+  <link rel="icon" href="assets/icons/apexstone-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/main.js" defer></script>
+  <script src="js/projects.js" defer></script>
+</head>
+
+<body data-page="projects">
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <div class="topbar">
+    <div class="container topbar-content">
+      <p>Serving Accra, Cape Coast and surrounding regions</p>
+
+      <div class="topbar-contact">
+        <a href="tel:+233000000000">+233 00 000 0000</a>
+        <a href="mailto:info@apexstone.example">
+          info@apexstone.example
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-content">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="ApexStone Construction home"
+      >
+        <span class="brand-mark" aria-hidden="true">AS</span>
+
+        <span class="brand-text">
+          <strong>ApexStone</strong>
+          <small>Construction Ltd.</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+        aria-label="Open navigation"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav
+        class="main-navigation"
+        id="mainNavigation"
+        aria-label="Main navigation"
+      >
+        <ul>
+          <li>
+            <a href="index.html" aria-current="page">Home</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a class="button header-button" href="contact.html">
+          Request a Quote
+        </a>
+      </nav>
+    </div>
+  </header>
+  
+    <main id="mainContent">
+        <section class="page-hero" aria-labelledby="pageTitle">
+            <img
+                class="page-hero-image"
+                src="assets/images/projects/commercial-complex.webp"
+                alt="Completed modern commercial building"
+                width="1200"
+                height="900"
+                fetchpriority="high"
+            >
+
+            <div class="page-hero-overlay"></div>
+
+            <div class="container page-hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <span>Projects</span>
+                </nav>
+
+                <p class="eyebrow eyebrow-light">Selected work</p>
+                <h1 id="pageTitle">Projects shaped by purpose and precision.</h1>
+
+                <p>
+                Explore fictional residential, commercial, renovation and
+                civil works projects from across Ghana.
+                </p>
+            </div>
+        </section>
+
+        <section class="section projects-introduction">
+            <div class="container section-heading">
+                <div>
+                <p class="eyebrow">Our portfolio</p>
+                <h2>Every project begins with a practical objective.</h2>
+                </div>
+
+                <p>
+                These demonstration projects show how ApexStone could present
+                its capabilities, completed work and construction experience
+                to potential clients.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects-gallery-section">
+            <div class="container">
+                <div class="project-filters" aria-label="Filter projects">
+                <button
+                    class="project-filter is-active"
+                    type="button"
+                    data-filter="all"
+                    aria-pressed="true"
+                >
+                    All Projects
+                </button>
+
+                <button
+                    class="project-filter"
+                    type="button"
+                    data-filter="residential"
+                    aria-pressed="false"
+                >
+                    Residential
+                </button>
+
+                <button
+                    class="project-filter"
+                    type="button"
+                    data-filter="commercial"
+                    aria-pressed="false"
+                >
+                    Commercial
+                </button>
+
+                <button
+                    class="project-filter"
+                    type="button"
+                    data-filter="renovation"
+                    aria-pressed="false"
+                >
+                    Renovation
+                </button>
+
+                <button
+                    class="project-filter"
+                    type="button"
+                    data-filter="civil"
+                    aria-pressed="false"
+                >
+                    Civil Works
+                </button>
+                </div>
+
+                <p
+                class="screen-reader-only"
+                id="projectResults"
+                role="status"
+                aria-live="polite"
+                ></p>
+
+                <div class="project-gallery-grid" id="projectGallery">
+                <article
+                    class="project-gallery-card"
+                    data-category="residential"
+                >
+                    <div class="project-gallery-image">
+                    <img
+                        src="assets/images/projects/residential-villa.webp"
+                        alt="Modern two-storey residential villa"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    </div>
+
+                    <div class="project-gallery-content">
+                    <p>Residential</p>
+                    <h2>Adisadel Family Residence</h2>
+
+                    <dl>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Cape Coast</dd>
+                        </div>
+
+                        <div>
+                        <dt>Completed</dt>
+                        <dd>2026</dd>
+                        </div>
+                    </dl>
+                    </div>
+                </article>
+
+                <article
+                    class="project-gallery-card"
+                    data-category="residential"
+                >
+                    <div class="project-gallery-image">
+                    <img
+                        src="assets/images/projects/townhouse-development.webp"
+                        alt="Contemporary residential townhouse development"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    </div>
+
+                    <div class="project-gallery-content">
+                    <p>Residential</p>
+                    <h2>East Legon Townhouses</h2>
+
+                    <dl>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Accra</dd>
+                        </div>
+
+                        <div>
+                        <dt>Completed</dt>
+                        <dd>2025</dd>
+                        </div>
+                    </dl>
+                    </div>
+                </article>
+
+                <article
+                    class="project-gallery-card"
+                    data-category="commercial"
+                >
+                    <div class="project-gallery-image">
+                    <img
+                        src="assets/images/projects/commercial-complex.webp"
+                        alt="Modern commercial office complex"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    </div>
+
+                    <div class="project-gallery-content">
+                    <p>Commercial</p>
+                    <h2>Meridian Business Complex</h2>
+
+                    <dl>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Accra</dd>
+                        </div>
+
+                        <div>
+                        <dt>Completed</dt>
+                        <dd>2026</dd>
+                        </div>
+                    </dl>
+                    </div>
+                </article>
+
+                <article
+                    class="project-gallery-card"
+                    data-category="commercial"
+                >
+                    <div class="project-gallery-image">
+                    <img
+                        src="assets/images/projects/retail-centre.webp"
+                        alt="Contemporary neighbourhood retail centre"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    </div>
+
+                    <div class="project-gallery-content">
+                    <p>Commercial</p>
+                    <h2>Central Market Retail Centre</h2>
+
+                    <dl>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Kasoa</dd>
+                        </div>
+
+                        <div>
+                        <dt>Completed</dt>
+                        <dd>2025</dd>
+                        </div>
+                    </dl>
+                    </div>
+                </article>
+
+                <article
+                    class="project-gallery-card"
+                    data-category="renovation"
+                >
+                    <div class="project-gallery-image">
+                    <img
+                        src="assets/images/projects/coastal-renovation.webp"
+                        alt="Renovated coastal guesthouse"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    </div>
+
+                    <div class="project-gallery-content">
+                    <p>Renovation</p>
+                    <h2>Atlantic View Renovation</h2>
+
+                    <dl>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Elmina</dd>
+                        </div>
+
+                        <div>
+                        <dt>Completed</dt>
+                        <dd>2026</dd>
+                        </div>
+                    </dl>
+                    </div>
+                </article>
+
+                <article
+                    class="project-gallery-card"
+                    data-category="civil"
+                >
+                    <div class="project-gallery-image">
+                    <img
+                        src="assets/images/projects/drainage-infrastructure.webp"
+                        alt="Completed concrete drainage infrastructure project"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    </div>
+
+                    <div class="project-gallery-content">
+                    <p>Civil Works</p>
+                    <h2>Abura Drainage Improvement</h2>
+
+                    <dl>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Cape Coast</dd>
+                        </div>
+
+                        <div>
+                        <dt>Completed</dt>
+                        <dd>2025</dd>
+                        </div>
+                    </dl>
+                    </div>
+                </article>
+                </div>
+
+                <p class="demo-note">
+                All projects, dates, names and locations are fictional
+                portfolio demonstration content.
+                </p>
+            </div>
+        </section>
+
+        <section class="statistics-section" aria-label="Project statistics">
+            <div class="container">
+                <div class="statistics-grid">
+                <div class="statistic">
+                    <strong>85+</strong>
+                    <span>Completed projects</span>
+                </div>
+
+                <div class="statistic">
+                    <strong>12+</strong>
+                    <span>Years of experience</span>
+                </div>
+
+                <div class="statistic">
+                    <strong>4</strong>
+                    <span>Project categories</span>
+                </div>
+
+                <div class="statistic">
+                    <strong>3</strong>
+                    <span>Operating regions</span>
+                </div>
+                </div>
+
+                <p class="demo-note">
+                Statistics are fictional and used for portfolio demonstration.
+                </p>
+            </div>
+        </section>
+
+        <section class="section project-principles">
+            <div class="container">
+                <div class="centered-heading">
+                <p class="eyebrow">Our approach</p>
+                <h2>Principles applied across every project type.</h2>
+                </div>
+
+                <div class="principles-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Purposeful Planning</h3>
+                    <p>
+                    Every decision should support the project’s intended use,
+                    requirements and long-term value.
+                    </p>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <h3>Responsible Execution</h3>
+                    <p>
+                    Organized supervision and communication help work progress
+                    safely and consistently.
+                    </p>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <h3>Detailed Handover</h3>
+                    <p>
+                    Completed work is reviewed before documentation and final
+                    delivery to the client.
+                    </p>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section call-to-action">
+            <div class="container call-to-action-content">
+                <div>
+                <p class="eyebrow">Your project could be next</p>
+                <h2>Have a construction idea you want to discuss?</h2>
+                </div>
+
+                <a class="button button-primary" href="contact.html">
+                Request a Project Quote
+                </a>
+            </div>
+        </section>
+    </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-company">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">AS</span>
+
+          <span class="brand-text">
+            <strong>ApexStone</strong>
+            <small>Construction Ltd.</small>
+          </span>
+        </a>
+
+        <p>
+          Professional construction services delivered with planning,
+          safety and lasting value.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Company</h2>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Services</h2>
+        <ul class="footer-links">
+          <li><a href="services.html#residential">Residential</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#renovation">Renovation</a></li>
+          <li><a href="services.html#management">Management</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+        <address class="footer-contact">
+          <p>Accra and Cape Coast, Ghana</p>
+          <a href="tel:+233000000000">+233 00 000 0000</a>
+          <a href="mailto:info@apexstone.example">
+            info@apexstone.example
+          </a>
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="currentYear"></span> ApexStone Construction Ltd.
+      </p>
+
+      <p>Fictional portfolio demonstration project.</p>
+    </div>
+  </footer>
+</body>
+</html>
