@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact ApexStone Construction | Request a Quote</title>
+
+    <meta
+    name="description"
+    content="Contact ApexStone Construction to discuss a residential, commercial, renovation, civil works or project-management enquiry."
+    >
+
+    <meta property="og:title" content="Contact ApexStone Construction">
+
+    <meta
+    property="og:description"
+    content="Tell us about your construction project and request a consultation."
+    >
+
+    <meta
+    property="og:image"
+    content="assets/images/projects/residential-villa.webp"
+    >
+
+  <link rel="icon" href="assets/icons/apexstone-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+
+<body data-page="contact">
+    <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <div class="topbar">
+    <div class="container topbar-content">
+      <p>Serving Accra, Cape Coast and surrounding regions</p>
+
+      <div class="topbar-contact">
+        <a href="tel:+233000000000">+233 00 000 0000</a>
+        <a href="mailto:info@apexstone.example">
+          info@apexstone.example
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-content">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="ApexStone Construction home"
+      >
+        <span class="brand-mark" aria-hidden="true">AS</span>
+
+        <span class="brand-text">
+          <strong>ApexStone</strong>
+          <small>Construction Ltd.</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+        aria-label="Open navigation"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav
+        class="main-navigation"
+        id="mainNavigation"
+        aria-label="Main navigation"
+      >
+        <ul>
+          <li>
+            <a href="index.html" aria-current="page">Home</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a class="button header-button" href="contact.html">
+          Request a Quote
+        </a>
+      </nav>
+    </div>
+  </header>
+  
+    <main id="mainContent">
+        <section class="page-hero" aria-labelledby="pageTitle">
+        <img
+            class="page-hero-image"
+            src="assets/images/projects/residential-villa.webp"
+            alt="Completed modern residential property"
+            width="1200"
+            height="900"
+            fetchpriority="high"
+        >
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container page-hero-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Contact</span>
+            </nav>
+
+            <p class="eyebrow eyebrow-light">Start a conversation</p>
+            <h1 id="pageTitle">Tell us about your construction project.</h1>
+
+            <p>
+            Share your project requirements and our fictional team will
+            demonstrate how a professional enquiry process could begin.
+            </p>
+        </div>
+        </section>
+
+        <section class="section contact-section">
+        <div class="container contact-layout">
+            <div class="contact-information">
+            <p class="eyebrow">Contact information</p>
+            <h2>Let’s discuss what you want to build.</h2>
+
+            <p class="contact-introduction">
+                Provide a few details about your project and the type of support
+                you need. This form is included for portfolio demonstration.
+            </p>
+
+            <div class="contact-details">
+                <div>
+                <span>Email</span>
+                <a href="mailto:projects@apexstone.example">
+                    projects@apexstone.example
+                </a>
+                </div>
+
+                <div>
+                <span>Telephone</span>
+                <a href="tel:+233000000000">+233 00 000 0000</a>
+                </div>
+
+                <div>
+                <span>Office hours</span>
+                <p>Monday–Friday, 8:00 AM–5:00 PM</p>
+                </div>
+
+                <div>
+                <span>Primary office</span>
+                <p>Cape Coast, Central Region, Ghana</p>
+                </div>
+            </div>
+
+            <div class="response-note">
+                <strong>Expected response time</strong>
+                <p>
+                Enquiries would normally receive an initial response within
+                two working days.
+                </p>
+            </div>
+            </div>
+
+            <div class="quotation-form-wrapper">
+            <p class="form-heading">Request a project consultation</p>
+
+            <form class="quotation-form" id="quotationForm" novalidate>
+                <div class="form-row">
+                <div class="form-field">
+                    <label for="fullName">Full name</label>
+                    <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    autocomplete="name"
+                    required
+                    >
+                    <small class="field-error" id="fullNameError"></small>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    >
+                    <small class="field-error" id="emailError"></small>
+                </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-field">
+                    <label for="telephone">Telephone number</label>
+                    <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    autocomplete="tel"
+                    required
+                    >
+                    <small class="field-error" id="telephoneError"></small>
+                </div>
+
+                <div class="form-field">
+                    <label for="projectLocation">Project location</label>
+                    <input
+                    type="text"
+                    id="projectLocation"
+                    name="projectLocation"
+                    placeholder="Town, city or region"
+                    required
+                    >
+                    <small class="field-error" id="projectLocationError"></small>
+                </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-field">
+                    <label for="service">Service required</label>
+                    <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Residential Construction">
+                        Residential Construction
+                    </option>
+                    <option value="Commercial Construction">
+                        Commercial Construction
+                    </option>
+                    <option value="Renovation and Remodelling">
+                        Renovation and Remodelling
+                    </option>
+                    <option value="Civil Works">Civil Works</option>
+                    <option value="Architectural Planning">
+                        Architectural Planning
+                    </option>
+                    <option value="Project Management">
+                        Project Management
+                    </option>
+                    </select>
+                    <small class="field-error" id="serviceError"></small>
+                </div>
+
+                <div class="form-field">
+                    <label for="timeline">Preferred timeline</label>
+                    <select id="timeline" name="timeline">
+                    <option value="">Select a timeline</option>
+                    <option value="Within 3 months">Within 3 months</option>
+                    <option value="3–6 months">3–6 months</option>
+                    <option value="6–12 months">6–12 months</option>
+                    <option value="More than 12 months">
+                        More than 12 months
+                    </option>
+                    <option value="Not decided">Not decided</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="form-field">
+                <label for="budget">Estimated budget range</label>
+                <select id="budget" name="budget">
+                    <option value="">Select a budget range</option>
+                    <option value="Below GHS 250,000">Below GHS 250,000</option>
+                    <option value="GHS 250,000–500,000">
+                    GHS 250,000–500,000
+                    </option>
+                    <option value="GHS 500,000–1,000,000">
+                    GHS 500,000–1,000,000
+                    </option>
+                    <option value="Above GHS 1,000,000">
+                    Above GHS 1,000,000
+                    </option>
+                    <option value="To be discussed">To be discussed</option>
+                </select>
+                </div>
+
+                <div class="form-field">
+                <label for="projectDetails">Project details</label>
+                <textarea
+                    id="projectDetails"
+                    name="projectDetails"
+                    rows="7"
+                    placeholder="Describe the project, property type and support you need."
+                    required
+                ></textarea>
+                <small class="field-error" id="projectDetailsError"></small>
+                </div>
+
+                <button class="button button-primary" type="submit">
+                Submit Project Enquiry
+                </button>
+
+                <p class="form-disclaimer">
+                This demonstration form does not transmit or store personal data.
+                </p>
+
+                <div
+                class="form-success"
+                id="formSuccess"
+                role="status"
+                aria-live="polite"
+                hidden
+                >
+                <strong>Enquiry prepared successfully.</strong>
+                <p>
+                    In a live website, these project details would now be sent
+                    securely to the ApexStone team.
+                </p>
+                </div>
+            </form>
+            </div>
+        </div>
+        </section>
+
+        <section class="section service-regions">
+        <div class="container">
+            <div class="centered-heading">
+            <p class="eyebrow">Areas represented</p>
+            <h2>Project support across selected regions.</h2>
+            </div>
+
+            <div class="region-grid">
+            <article>
+                <span>01</span>
+                <h3>Central Region</h3>
+                <p>
+                Cape Coast, Elmina, Kasoa and selected surrounding communities.
+                </p>
+            </article>
+
+            <article>
+                <span>02</span>
+                <h3>Greater Accra</h3>
+                <p>
+                Accra and selected residential and commercial development areas.
+                </p>
+            </article>
+
+            <article>
+                <span>03</span>
+                <h3>Other Locations</h3>
+                <p>
+                Additional Ghanaian locations considered according to project scope.
+                </p>
+            </article>
+            </div>
+
+            <p class="demo-note">
+            Locations and company contact details are fictional portfolio content.
+            </p>
+        </div>
+        </section>
+
+        <section class="section enquiry-process">
+        <div class="container">
+            <div class="section-heading">
+            <div>
+                <p class="eyebrow">What happens next</p>
+                <h2>A straightforward enquiry process.</h2>
+            </div>
+
+            <p>
+                A clear first conversation helps establish whether the project,
+                timeline and required services are a suitable match.
+            </p>
+            </div>
+
+            <ol class="enquiry-process-grid">
+            <li>
+                <span>01</span>
+                <h3>Submit Details</h3>
+                <p>Provide the essential information about your proposed project.</p>
+            </li>
+
+            <li>
+                <span>02</span>
+                <h3>Initial Review</h3>
+                <p>The project requirements and requested service are reviewed.</p>
+            </li>
+
+            <li>
+                <span>03</span>
+                <h3>Consultation</h3>
+                <p>A discussion helps clarify the scope, location and next steps.</p>
+            </li>
+
+            <li>
+                <span>04</span>
+                <h3>Project Proposal</h3>
+                <p>A suitable approach and quotation can then be prepared.</p>
+            </li>
+            </ol>
+        </div>
+        </section>
+    </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-company">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">AS</span>
+
+          <span class="brand-text">
+            <strong>ApexStone</strong>
+            <small>Construction Ltd.</small>
+          </span>
+        </a>
+
+        <p>
+          Professional construction services delivered with planning,
+          safety and lasting value.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Company</h2>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Services</h2>
+        <ul class="footer-links">
+          <li><a href="services.html#residential">Residential</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#renovation">Renovation</a></li>
+          <li><a href="services.html#management">Management</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+        <address class="footer-contact">
+          <p>Accra and Cape Coast, Ghana</p>
+          <a href="tel:+233000000000">+233 00 000 0000</a>
+          <a href="mailto:info@apexstone.example">
+            info@apexstone.example
+          </a>
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="currentYear"></span> ApexStone Construction Ltd.
+      </p>
+
+      <p>Fictional portfolio demonstration project.</p>
+    </div>
+  </footer>
+</body>
+</html>

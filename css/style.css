@@ -2227,3 +2227,358 @@ address {
     padding: 1.5rem;
   }
 }
+
+
+
+
+
+
+
+/******************** Contact page *******************/
+
+.contact-section {
+  background: var(--stone);
+}
+
+.contact-layout {
+  display: grid;
+  align-items: start;
+  gap: clamp(3rem, 7vw, 6rem);
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.contact-information {
+  position: sticky;
+  top: calc(var(--header-height) + 2rem);
+}
+
+.contact-information h2 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+}
+
+.contact-introduction {
+  color: var(--concrete);
+}
+
+.contact-details {
+  margin-top: 2.5rem;
+  border-top: 1px solid #c7ccce;
+}
+
+.contact-details > div {
+  display: grid;
+  gap: 0.3rem;
+  border-bottom: 1px solid #c7ccce;
+  padding-block: 1.2rem;
+}
+
+.contact-details span {
+  color: var(--concrete);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact-details a,
+.contact-details p {
+  margin: 0;
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.contact-details a:hover {
+  color: var(--copper);
+}
+
+.response-note {
+  margin-top: 2rem;
+  background: var(--steel-blue);
+  padding: 1.7rem;
+  color: var(--white);
+}
+
+.response-note strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.response-note p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.88rem;
+}
+
+/* Quotation form */
+
+.quotation-form-wrapper {
+  background: var(--white);
+  box-shadow: 0 18px 55px rgba(21, 27, 31, 0.08);
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.form-heading {
+  margin-bottom: 2.5rem;
+  color: var(--charcoal);
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.quotation-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-field {
+  display: grid;
+  align-content: start;
+}
+
+.form-field label {
+  margin-bottom: 0.55rem;
+  color: var(--charcoal);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid #b9c0c3;
+  border-radius: 0;
+  background: #fafafa;
+  color: var(--charcoal);
+  padding: 0.95rem 1rem;
+  font: inherit;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.form-field input,
+.form-field select {
+  min-height: 54px;
+}
+
+.form-field textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #7b858a;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--copper);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(168, 94, 42, 0.13);
+}
+
+.form-field.has-error input,
+.form-field.has-error select,
+.form-field.has-error textarea {
+  border-color: #a52b2b;
+  background: #fffafa;
+}
+
+.field-error {
+  min-height: 1.1rem;
+  margin-top: 0.35rem;
+  color: #a52b2b;
+  font-size: 0.75rem;
+}
+
+.quotation-form .button {
+  width: fit-content;
+  margin-top: 0.3rem;
+}
+
+.form-disclaimer {
+  margin: 0;
+  color: var(--concrete);
+  font-size: 0.76rem;
+}
+
+.form-success {
+  border-left: 4px solid var(--copper);
+  background: #edf3ef;
+  padding: 1.3rem;
+  color: #263d31;
+}
+
+.form-success[hidden] {
+  display: none;
+}
+
+.form-success strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.form-success p {
+  margin: 0;
+  color: #4e6257;
+  font-size: 0.86rem;
+}
+
+/* Service regions */
+
+.service-regions {
+  background: var(--white);
+}
+
+.region-grid {
+  display: grid;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.region-grid article {
+  min-height: 280px;
+  background: var(--white);
+  padding: 2.2rem;
+}
+
+.region-grid article > span {
+  display: block;
+  margin-bottom: 4rem;
+  color: var(--copper);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.region-grid h3 {
+  font-size: 1.5rem;
+}
+
+.region-grid p {
+  margin: 0;
+  color: var(--concrete);
+  font-size: 0.9rem;
+}
+
+/* Enquiry process */
+
+.enquiry-process {
+  background: var(--steel-blue);
+  color: var(--white);
+}
+
+.enquiry-process .section-heading h2 {
+  color: var(--white);
+}
+
+.enquiry-process .section-heading > p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.enquiry-process-grid {
+  display: grid;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.17);
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.enquiry-process-grid li {
+  min-height: 300px;
+  background: var(--steel-blue);
+  padding: 2rem;
+}
+
+.enquiry-process-grid span {
+  display: block;
+  margin-bottom: 4rem;
+  color: var(--copper-light);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.enquiry-process-grid h3 {
+  color: var(--white);
+  font-size: 1.35rem;
+}
+
+.enquiry-process-grid p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.88rem;
+}
+
+/* Contact page responsive styles */
+
+@media (max-width: 959px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-information {
+    position: static;
+    max-width: 720px;
+  }
+
+  .region-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .region-grid article {
+    min-height: auto;
+  }
+
+  .region-grid article > span {
+    margin-bottom: 2.5rem;
+  }
+
+  .enquiry-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .quotation-form-wrapper {
+    padding: 2rem 1.3rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .quotation-form .button {
+    width: 100%;
+  }
+
+  .enquiry-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enquiry-process-grid li {
+    min-height: auto;
+  }
+
+  .enquiry-process-grid span {
+    margin-bottom: 2.5rem;
+  }
+}
